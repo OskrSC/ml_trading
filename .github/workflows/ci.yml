@@ -1,0 +1,37 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  pruebas:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Instalar dependencias
+        run: pip install -r requirements-dev.txt
+      - name: Comprobar que el tema está sincronizado con los tokens
+        run: |
+          python scripts/generate_theme.py
+          git diff --exit-code .streamlit/config.toml
+      - name: Ejecutar pruebas
+        run: python -m pytest
+
+  seguridad:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Instalar dependencias
+        run: pip install -r requirements.txt pip-audit
+      - name: Buscar vulnerabilidades conocidas en las dependencias
+        run: pip-audit -r requirements.txt
+        continue-on-error: true  # informativo: una vulnerabilidad nueva no debe bloquear cada cambio

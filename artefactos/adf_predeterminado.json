@@ -1,0 +1,83 @@
+{
+  "barras_por_dia": 26,
+  "filas": [
+    {
+      "variable": "open",
+      "estadistico": -0.5805609856413959,
+      "p_valor": 0.8753142285716156,
+      "retardos": 2
+    },
+    {
+      "variable": "high",
+      "estadistico": -0.4743226629420802,
+      "p_valor": 0.8969306073899652,
+      "retardos": 43
+    },
+    {
+      "variable": "low",
+      "estadistico": -0.6248379678357903,
+      "p_valor": 0.8652703214099322,
+      "retardos": 29
+    },
+    {
+      "variable": "close",
+      "estadistico": -0.556995972738752,
+      "p_valor": 0.8804061567319288,
+      "retardos": 1
+    },
+    {
+      "variable": "pct_change",
+      "estadistico": -142.13953984756628,
+      "p_valor": 0.0,
+      "retardos": 0
+    },
+    {
+      "variable": "pct_change2",
+      "estadistico": -21.043101456364344,
+      "p_valor": 0.0,
+      "retardos": 45
+    },
+    {
+      "variable": "pct_change5",
+      "estadistico": -19.587942517451367,
+      "p_valor": 0.0,
+      "retardos": 45
+    },
+    {
+      "variable": "rsi",
+      "estadistico": -18.80633667122887,
+      "p_valor": 2.0226158398730964e-30,
+      "retardos": 2
+    },
+    {
+      "variable": "adx",
+      "estadistico": -12.496387428074199,
+      "p_valor": 2.869979310001105e-23,
+      "retardos": 27
+    },
+    {
+      "variable": "sma",
+      "estadistico": -0.40793506037183475,
+      "p_valor": 0.908765452309766,
+      "retardos": 45
+    },
+    {
+      "variable": "corr",
+      "estadistico": -22.538695448228516,
+      "p_valor": 0.0,
+      "retardos": 28
+    },
+    {
+      "variable": "volatility",
+      "estadistico": -11.424538474440261,
+      "p_valor": 6.745673014524471e-21,
+      "retardos": 31
+    },
+    {
+      "variable": "volatility2",
+      "estadistico": -11.778692485240667,
+      "p_valor": 1.0474124552409685e-21,
+      "retardos": 28
+    }
+  ]
+}

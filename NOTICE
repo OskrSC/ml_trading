@@ -1,0 +1,23 @@
+Aprendizaje automático en trading
+=================================
+
+Este proyecto incorpora material de terceros:
+
+1. Carpeta data_modules/ y third_party/ml-trading-ebook/
+   Repositorio quantra-go-algo/ml-trading-ebook (Quantra, QuantInsti).
+   Licencia: Apache License 2.0. Se conserva su texto en
+   third_party/ml-trading-ebook/LICENSE. Los archivos de data_modules/ se
+   incluyen sin modificar. El repositorio de origen indica que es una versión
+   antigua y que la actual se mantiene en https://github.com/QuantInsti.
+
+2. Contenido conceptual basado en "Machine Learning in Trading"
+   Autores: Ishan Shah y Rekhit Pachanekar (QuantInsti).
+   Licencia: Creative Commons Attribution-ShareAlike 4.0 International.
+   Si se reutiliza texto de la obra, debe atribuirse y compartirse con la
+   misma licencia.
+
+3. Código propio (carpetas mltrading/, scripts/, tests/)
+   Licencia sugerida: MIT (ver LICENSE). Es un valor por defecto pensado para un
+   proyecto educativo; quien mantenga este repositorio debe confirmarla o
+   sustituirla por la que prefiera antes de un lanzamiento público, y actualizar
+   este archivo y LICENSE en consecuencia.
